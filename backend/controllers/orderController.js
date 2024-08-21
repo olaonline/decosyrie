@@ -3,24 +3,42 @@ const Order = require('../models/order');
 
 // @desc    Create a new order
 const addOrderItems = asyncHandler(async (req, res) => {
-  const { orderItems, shippingAddress, paymentMethod, Price } = req.body;
-
-  if (orderItems && orderItems.length === 0) {
-    res.status(400);
-    throw new Error('No order items');
-  } else {
+    const { orderItems, shippingAddress, paymentMethod, Price } = req.body;
+  
+    // Validate request payload
+    if (!orderItems || orderItems.length === 0) {
+      res.status(400);
+      throw new Error('No order items');
+    }
+    if (!shippingAddress || !paymentMethod || !Price) {
+      res.status(400);
+      throw new Error('Missing required fields');
+    }
+  
+    // Validate each order item
+    for (const item of orderItems) {
+      if (!item.product) {
+        res.status(400);
+        throw new Error('Order item is missing product ID');
+      }
+      if (!item.name || !item.qty || !item.image || !item.price) {
+        res.status(400);
+        throw new Error('Order item is missing required fields');
+      }
+    }
+  
+    // Create the order
     const order = new Order({
-      user: req.user._id,
+      user: req.user._id, // Assuming req.user is set by authentication middleware
       orderItems,
       shippingAddress,
       paymentMethod,
       Price,
     });
-
+  
     const createdOrder = await order.save();
     res.status(201).json(createdOrder);
-  }
-});
+  });
 
 // @desc    Get order by ID
 const getOrderById = asyncHandler(async (req, res) => {
