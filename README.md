@@ -14,7 +14,10 @@ Developed by: [Oula Alhaffar](https://www.linkedin.com/in/olaonline/)
 
 ## Features
 
-- Add food and beverages
+- Login/Register
+- List Products
+- List Orders
+- Cart Managemetnt 
 
 ## Requirements
 
