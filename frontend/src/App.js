@@ -21,6 +21,7 @@ import OrderDetailsPage from "./components/OrderDetails";
 import { useEffect } from "react";
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import Contact from "./pages/Contact";
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/product/:id" element={<ProductDetails />} /> 
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

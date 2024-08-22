@@ -8,7 +8,7 @@ const Aboutus = () => {
 
   return (
     <div className="about-us-container bg-white ">
-      <div className="hero-section flex items-center justify-center bg-slate-200 h-56" data-aos="fade-up">
+      <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
         <div className="text-center">
           <h1 className="text-6xl font-extrabold mb-4">About Us</h1>
           <p className="text-2xl mb-6">Creating Spaces That Inspire</p>
@@ -46,7 +46,8 @@ const Aboutus = () => {
           Let's create something beautiful together. Explore our latest collections and find the perfect pieces to complement your style.
         </p>
         <NavLink to='/products'>
-        <button className="bg-blue-400 hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105">
+        <button             className="bg-customGreen-600 text-white px-4 py-2 rounded-md hover:bg-customGreen-700 transition-colors duration-300"
+        >
           Shop Now
         </button></NavLink>
       </div>

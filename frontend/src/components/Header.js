@@ -32,8 +32,8 @@ const Header = () => {
             to="/aboutus"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-500 font-semibold'
-                : 'text-gray-600 hover:text-blue-500 transition-colors duration-200'
+                ? 'text-customGreen-500 font-semibold'
+                : 'text-gray-600 hover:text-customGreen-500 transition-colors duration-200'
             }
           >
             About Us
@@ -42,8 +42,8 @@ const Header = () => {
             to="/products"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-500 font-semibold'
-                : 'text-gray-600 hover:text-blue-500 transition-colors duration-200'
+                ? 'text-customGreen-500 font-semibold'
+                : 'text-gray-600 hover:text-customGreen-500 transition-colors duration-200'
             }
           >
             Products
@@ -52,8 +52,8 @@ const Header = () => {
             to="/cart"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-500 font-semibold'
-                : 'text-gray-600 hover:text-blue-500 transition-colors duration-200'
+                ? 'text-customGreen-500 font-semibold'
+                : 'text-gray-600 hover:text-customGreen-500 transition-colors duration-200'
             }
           >
             Cart
@@ -66,15 +66,15 @@ const Header = () => {
             to="/orders"
             className={({ isActive }) =>
               isActive
-                ? 'text-blue-500 font-semibold'
-                : 'text-gray-600 hover:text-blue-500 transition-colors duration-200'
+                ? 'text-customGreen-500 font-semibold'
+                : 'text-gray-600 hover:text-customGreen-500 transition-colors duration-200'
             }
           >
             Orders
           </NavLink>
               <button
                 onClick={handleLogout}
-                className="text-gray-600 hover:text-blue-500 transition-colors duration-200"
+                className="text-gray-600 hover:text-customGreen-500 transition-colors duration-200"
               >
                 Log Out
               </button>
@@ -84,8 +84,8 @@ const Header = () => {
               to="/login"
               className={({ isActive }) =>
                 isActive
-                  ? 'text-blue-500 font-semibold'
-                  : 'text-gray-600 hover:text-blue-500 transition-colors duration-200'
+                  ? 'text-customGreen-500 font-semibold'
+                  : 'text-gray-600 hover:text-customGreen-500 transition-colors duration-200'
               }
             >
               Sign In

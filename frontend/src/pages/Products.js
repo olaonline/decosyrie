@@ -33,21 +33,21 @@ const Products = () => {
 
   return (
     <div className="product-us-container bg-white ">
-    <div className="hero-section flex items-center justify-center bg-slate-200 h-56" data-aos="fade-up">
+    <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
         <div className="text-center">
-          <h1 className="text-6xl font-extrabold mb-4">Products</h1>
+          <h1 className="text-6xl font-extrabold mb-4" >Products</h1>
           <p className="text-2xl mb-6">Explore Our Products</p>
         </div>
       </div>
       <div className="container mx-auto p-4">
     <br/>
-        <div className="mb-8">
+        <div className="mb-8" data-aos="fade-down">
           <div className="flex justify-center space-x-4">
             {categories.map(category => (
               <button
                 key={category}
                 onClick={() => handleCategoryChange(category)}
-                className={`px-4 py-2 rounded-md text-white font-semibold ${selectedCategory === category ? 'bg-blue-600' : 'bg-gray-600 hover:bg-gray-700'} transition-colors`}
+                className={`px-4 py-2 rounded-md text-white font-semibold ${selectedCategory === category ? 'bg-customGreen-600' : 'bg-gray-600 hover:bg-gray-700'} transition-colors`}
               >
                 {category}
               </button>
@@ -55,7 +55,7 @@ const Products = () => {
           </div>
         </div>
 
-        <div className="text-center mb-12">
+        <div className="text-center mb-12" data-aos="fade-down">
           <p className="text-gray-600">
             Discover our exclusive collection of products carefully crafted to meet your needs. Browse through and pick the best for you.
           </p>
@@ -63,7 +63,7 @@ const Products = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {filteredProducts.map((product) => (
-            <ProductCard key={product._id} product={product} />
+            <ProductCard key={product._id} product={product}/>
           ))}
         </div>
       </div>

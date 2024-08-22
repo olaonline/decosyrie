@@ -28,9 +28,18 @@ const OrderDetailsPage = () => {
   if (!order) return <div className="container mx-auto p-4">Order not found.</div>;
 
   return (
+    <>
+          <div className=" hero-section ">
+              <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
+        <div className="text-center">
+          <h1 className="text-6xl font-extrabold mb-4">Order Details</h1>
+          <p className="text-2xl mb-6">Date: {new Date(order.createdAt).toLocaleDateString()}</p>
+        </div>
+      </div></div>
+    
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Order Details</h1>
-      <div className="bg-white p-4 rounded-lg shadow-md">
+      {/* <h1 className="text-2xl font-bold mb-4" data-aos="slide-right">Order Details</h1> */}
+      <div className="bg-white p-4 rounded-lg shadow-md" data-aos="slide-right">
         <h2 className="text-xl font-semibold mb-2">Order #{order._id}</h2>
         <p className="text-gray-600 mb-2">Date: {new Date(order.createdAt).toLocaleDateString()}</p>
         <p className="text-gray-600 mb-2">Total Price: €{order.Price.toFixed(2)}</p>
@@ -57,6 +66,7 @@ const OrderDetailsPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

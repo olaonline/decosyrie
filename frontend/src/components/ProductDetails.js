@@ -50,7 +50,7 @@ const ProductDetails = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
         <div>
           <img src={product.image} alt={product.name} className="w-full h-auto rounded-lg shadow-md" />
         </div>
@@ -74,7 +74,7 @@ const ProductDetails = () => {
           <button
             onClick={addToCart}
             disabled={product.countInStock === 0}
-            className="flex items-center justify-center bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 disabled:opacity-50"
+            className="flex items-center justify-center bg-customGreen-600 text-white px-4 py-2 rounded-md hover:bg-customGreen-700 transition-colors duration-300 disabled:opacity-50"
           >
             <FaCartPlus className="mr-2" /> Add to Cart
           </button>

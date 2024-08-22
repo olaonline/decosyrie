@@ -1,0 +1,25 @@
+/* Hero Slider */
+.hero-slider {
+  height: 400px; /* Adjust this value to make the slider smaller */
+  overflow: hidden; /* Hide overflow to keep it tidy */
+}
+
+/* Adjust image height to match slider height */
+.hero-slider .carousel .slide img {
+  height: 400px; /* Set height to match the slider */
+  object-fit: cover; /* Ensure images cover the container */
+}
+
+/* Style for the caption overlay */
+.hero-slider .legend {
+  position: absolute; /* Absolute positioning for overlay */
+  bottom: 20px; /* Position from the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  background: rgba(0, 0, 0, 0.5); /* Background with opacity */
+  padding: 10px; /* Add some padding */
+  border-radius: 8px; /* Rounded corners */
+  max-width: 80%; /* Limit width */
+  text-align: center; /* Center text */
+  color: white; /* Text color */
+}

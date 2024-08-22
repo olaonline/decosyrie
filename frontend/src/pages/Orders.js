@@ -33,7 +33,7 @@ const OrdersPage = () => {
 
       <>
       <div className=" hero-section ">
-              <div className="hero-section flex items-center justify-center bg-slate-200 h-56" data-aos="fade-up">
+              <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
         <div className="text-center">
           <h1 className="text-6xl font-extrabold mb-4">Orders</h1>
           <p className="text-2xl mb-6">All your purchases with detailed insights</p>
@@ -42,11 +42,11 @@ const OrdersPage = () => {
 
     <div className="container mx-auto p-4">
 
-      <h1 className="text-2xl font-bold mb-4">My Orders</h1>
+      <h1 className="text-2xl font-bold mb-4" data-aos="slide-up">My Orders</h1>
       {orders.length === 0 ? (
         <div className="text-center text-gray-600">You have no orders yet.</div>
       ) : (
-        <div className="space-y-4">
+        <div className="space-y-4" data-aos="slide-left">
           {orders.map(order => (
             <div key={order._id} className="bg-white p-4 rounded-lg shadow-md">
               <h2 className="text-xl font-semibold mb-2">Order #{order._id}</h2>
@@ -55,7 +55,7 @@ const OrdersPage = () => {
               <p className="text-gray-600 mb-2">Status: {order.isPaid ? 'Paid' : 'Pending'}</p>
               <button
                 onClick={() => navigate(`/orders/${order._id}`)}
-                className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300"
+                className="mt-4 bg-customGreen-600 text-white px-4 py-2 rounded-md hover:bg-customGreen-700 transition-colors duration-300"
               >
                 View Details
               </button>

@@ -62,6 +62,14 @@ const CheckoutPage = () => {
   };
 
   return (
+    <>
+          <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
+        <div className="text-center">
+          <h1 className="text-6xl font-extrabold mb-4">Checkout</h1>
+          <p className="text-2xl mb-6">You are one step closer</p>
+        </div>
+      </div>
+      
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Checkout</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -118,12 +126,13 @@ const CheckoutPage = () => {
         <button
           type="submit"
           disabled={loading}
-          className={`bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-colors duration-300 ${loading ? 'bg-blue-400' : ''}`}
+          className={`bg-customGreen-600 text-white py-2 px-4 rounded-md hover:bg-customGreen-700 transition-colors duration-300 ${loading ? 'bg-customGreen-400' : ''}`}
         >
           {loading ? 'Processing...' : 'Place Order'}
         </button>
       </form>
     </div>
+    </>
   );
 };
 

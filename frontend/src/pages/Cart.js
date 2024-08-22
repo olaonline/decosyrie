@@ -26,7 +26,7 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return <>
-          <div className="hero-section flex items-center justify-center bg-slate-200 h-56" data-aos="fade-up">
+          <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
         <div className="text-center">
           <h1 className="text-6xl font-extrabold mb-4">Cart</h1>
           <p className="text-2xl mb-6">A beautifully organized cart, ready for checkout.</p>
@@ -38,7 +38,7 @@ const Cart = () => {
 
   return (
     <>
-    <div className="hero-section flex items-center justify-center bg-slate-200 h-56" data-aos="fade-up">
+    <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
         <div className="text-center">
           <h1 className="text-6xl font-extrabold mb-4">Cart</h1>
           <p className="text-2xl mb-6">A beautifully organized cart, ready for checkout.</p>
@@ -71,7 +71,7 @@ const Cart = () => {
         <h2 className="text-xl font-semibold text-gray-800">Total: €{getTotalPrice()}</h2>
         <button
           onClick={handleCheckout}
-          className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300"
+          className="mt-4 bg-customGreen-600 text-white px-4 py-2 rounded-md hover:bg-customGreen-700 transition-colors duration-300"
         >
           Proceed to Checkout
         </button>

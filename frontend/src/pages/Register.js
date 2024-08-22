@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { registerUser } from '../services/userService';
 import { useNavigate } from 'react-router-dom';
+import "aos/dist/aos"
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -27,7 +28,7 @@ const Register = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">
+      <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg" data-aos="zoom-in">
         <h1 className="text-3xl font-bold mb-4 text-center">Register</h1>
         {error && <p className="text-red-500 mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>
@@ -64,14 +65,14 @@ const Register = () => {
           <button
             type="submit"
             disabled={loading}
-            className={`w-full py-2 px-4 rounded-md text-white font-semibold ${loading ? 'bg-gray-400' : 'bg-blue-600 hover:bg-blue-700'}`}
+            className={`w-full py-2 px-4 rounded-md text-white font-semibold ${loading ? 'bg-gray-400' : 'bg-customGreen-600 hover:bg-customGreen-700'}`}
           >
             {loading ? 'Registering...' : 'Register'}
           </button>
         </form>
         <div className="mt-4 text-center">
           <p className="text-gray-600">Already have an account?</p>
-          <a href="/login" className="text-blue-600 hover:underline">Sign In here</a>
+          <a href="/login" className="text-customGreen-600 hover:underline">Sign In here</a>
         </div>
       </div>
     </div>
