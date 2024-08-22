@@ -25,3 +25,15 @@ To run Decosyrie locally, you will need:
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
+
+
+## Libraries
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [jwt-decode](https://www.npmjs.com/package/jwt-decode)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [FontAwesome](https://fontawesome.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [AOS](https://michalsnik.github.io/aos/)
+- [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel)
+- [Axios](https://axios-http.com/)
