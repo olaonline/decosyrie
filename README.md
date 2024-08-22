@@ -13,14 +13,12 @@ Together, Decosyrie reflects the blend of artistic craftsmanship and Syrian heri
 Developed by: [Oula Alhaffar](https://www.linkedin.com/in/olaonline/)
 
 ## Features
-
 - Login/Register
 - List Products
 - List Orders
 - Cart Managemetnt 
 
 ## Requirements
-
 To run Decosyrie locally, you will need:
 
 - [Node.js](https://nodejs.org/)
@@ -28,7 +26,6 @@ To run Decosyrie locally, you will need:
 
 
 ## Libraries
-
 - [Tailwind CSS](https://tailwindcss.com/)
 - [jwt-decode](https://www.npmjs.com/package/jwt-decode)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)
