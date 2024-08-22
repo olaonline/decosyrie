@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/decosyrie/static/css/main.8f91774e.css",
+    "main.js": "/decosyrie/static/js/main.6baa2b73.js",
+    "static/media/hero.jpg": "/decosyrie/static/media/hero.2cbc81fcb4aec56f9bb8.jpg",
+    "static/media/slider2.jpg": "/decosyrie/static/media/slider2.2bcd0e2ba59e52b6049a.jpg",
+    "static/media/about.png": "/decosyrie/static/media/about.6d1ce5e06c531538d299.png",
+    "static/media/slider3.jpg": "/decosyrie/static/media/slider3.6433194b9e927703adac.jpg",
+    "static/media/slider1.jpg": "/decosyrie/static/media/slider1.4431e3cfc0f70a0b1d81.jpg",
+    "static/media/fa-solid-900.ttf": "/decosyrie/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/decosyrie/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/decosyrie/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/logo-sq.png": "/decosyrie/static/media/logo-sq.bb523137d33feafabb52.png",
+    "static/media/fa-brands-400.woff2": "/decosyrie/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/decosyrie/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/decosyrie/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/decosyrie/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/decosyrie/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/decosyrie/index.html",
+    "main.8f91774e.css.map": "/decosyrie/static/css/main.8f91774e.css.map",
+    "main.6baa2b73.js.map": "/decosyrie/static/js/main.6baa2b73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f91774e.css",
+    "static/js/main.6baa2b73.js"
+  ]
+}
