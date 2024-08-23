@@ -55,7 +55,7 @@ const OrderDetailsPage = () => {
         <div className="space-y-2">
           {order.orderItems.map(item => (
             <div key={item._id} className="flex items-center p-2 border rounded-md shadow-sm">
-              <img src={item.image} alt={item.name} className="h-20 w-20 object-cover rounded-lg mr-4" />
+              <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={item.name} className="h-20 w-20 object-cover rounded-lg mr-4" />
               <div className="flex-1">
                 <h4 className="text-md font-semibold">{item.name}</h4>
                 <p className="text-gray-600">Qty: {item.qty}</p>

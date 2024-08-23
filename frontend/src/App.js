@@ -6,6 +6,7 @@ import AboutUs from "./pages/Aboutus";
 import ProductDetails from "./components/ProductDetails";
 import { CartProvider } from './context/CartContext'; // Import CartProvider
 import CheckoutPage from "./pages/Checkout";
+import Privacy from "./pages/Privacy";
 
 import {
   BrowserRouter as Router,
@@ -49,6 +50,7 @@ function App() {
         <Route path="/product/:id" element={<ProductDetails />} /> 
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
       <Footer />
     </Router>

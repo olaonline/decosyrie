@@ -11,10 +11,10 @@ const Footer = () => {
           <div data-aos="slide-left">
             <h3 className="text-xl font-bold mb-4">DecoSyrie</h3>
             <p className="text-white">
-              We are an Online Store
+            Decosyrie highlights the artistic and handcrafted quality of the our Syria’s rich cultural heritage, adding authenticity and cultural depth.
             </p>
-            <p className="text-white">Email: olaalhaffar@gmail.com</p>
-            <p className="text-white">Phone: (123) 456-7890</p>
+            {/* <p className="text-white">Email: olaalhaffar@gmail.com</p> */}
+            {/* <p className="text-white">Phone: (123) 456-7890</p> */}
           </div>
 
           {/* Navigation Links */}
@@ -40,10 +40,10 @@ const Footer = () => {
           <div data-aos="slide-left"> 
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="https://facebook.com/decosyrie" className="text-white hover:text-customGreen-50 transition-colors duration-200">
+              <a href="https://facebook.com/decosyrie" target='_blank' rel="noreferrer" className="text-white hover:text-customGreen-50 transition-colors duration-200">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/decosyrie/" className="text-white hover:text-customGreen-50 transition-colors duration-200">
+              <a href="https://www.instagram.com/decosyrie/" target='_blank' rel="noreferrer" className="text-white hover:text-customGreen-50 transition-colors duration-200">
                 <i className="fab fa-instagram"></i>
               </a>
             </div>

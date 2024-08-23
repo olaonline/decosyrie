@@ -12,6 +12,8 @@ const OrdersPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+
     const getOrders = async () => {
       try {
         const ordersData = await fetchUserOrders();

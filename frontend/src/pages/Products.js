@@ -11,6 +11,7 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
     const loadProducts = async () => {
       try {
         const data = await fetchProducts();

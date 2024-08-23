@@ -7,6 +7,7 @@ import './Contact.css'; // Import your custom styles
 const Contact = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Initialize AOS with a duration of 1000ms
+    window.scrollTo(0, 0); // Scroll to the top of the page
   }, []);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createOrder } from '../services/OrderService';
 import { useCart } from '../hooks/useCart'; // Custom hook for cart management
@@ -14,6 +14,10 @@ const CheckoutPage = () => {
   const [paymentMethod, setPaymentMethod] = useState(''); // Adjust based on actual payment method
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,7 +56,9 @@ const CheckoutPage = () => {
       // Clear the cart after placing the order
       dispatch({ type: 'CLEAR_CART' });
 
-      navigate('/'); // Redirect to home or order confirmation page
+      // navigate('/orders'); // Redirect to home or order confirmation page
+      // window.location.href = '/oders';
+      navigate('/orders')
     } catch (error) {
       alert('Error placing order');
       console.error('Error placing order:', error);

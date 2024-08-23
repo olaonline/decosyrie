@@ -3,11 +3,23 @@ import ProductCard from '../components/ProductCard';
 import { fetchProducts } from '../services/productService';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Ensure correct import
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Homepage'
+import { Navigate } from 'react-router-dom';
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
+
+  function handleContactClick(){
+    // window.location.href = '/contact';
+    navigate('/contact')
+  }
+
+  function HandleReadMore(){
+    navigate('/aboutus')
+  }
+
 
   useEffect(() => {
     const loadProducts = async () => {
@@ -21,6 +33,7 @@ const HomePage = () => {
 
     loadProducts();
   }, []);
+
 
   return (
     <>
@@ -60,9 +73,9 @@ const HomePage = () => {
               <p className="text-lg leading-relaxed mb-6 text-gray-700">
                 At Decosyrie, we believe in crafting environments that inspire creativity and comfort. We curate unique pieces that transform spaces into reflections of personal style.
               </p>
-              <Link to="/aboutus" className="text-customGreen-600 hover:text-customGreen-800 font-semibold">
+              <button onClick={HandleReadMore} className="text-customGreen-600 hover:text-customGreen-800 font-semibold">
                 Read More
-              </Link>
+              </button>
             </div>
             <div className="image-section" data-aos="fade">
               <img src={require('../assets/about.png')} alt="3D Design" className="w-3/5 rounded-lg transition-transform transform hover:scale-105" />
@@ -93,12 +106,11 @@ const HomePage = () => {
           <p className="text-lg text-gray-600 mb-6">
             Have any questions or concerns? We’re here to help. Reach out to us anytime, and we’ll get back to you as soon as possible.
           </p>
-          <Link
-            to="/contact"
-            className="bg-customGreen-600 text-white px-4 py-2 rounded-md hover:bg-customGreen-700 transition-colors duration-300"
+          <button
+            onClick={handleContactClick} className="bg-customGreen-600 text-white px-4 py-2 rounded-md hover:bg-customGreen-700 transition-colors duration-300"
           >
             Contact Us
-          </Link>
+          </button>
         </div>
       </section>
     </>

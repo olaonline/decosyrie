@@ -1,8 +1,14 @@
 import React, { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CartContext from '../context/CartContext'; // Adjust the import path as needed
+import { useEffect } from 'react';
 
 const Cart = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, []);
+
   const { cart, dispatch } = useContext(CartContext);
   const navigate = useNavigate();
 
@@ -52,7 +58,7 @@ const Cart = () => {
         {cart.map(item => (
           <div key={item.id} className="flex items-center justify-between p-4 bg-white rounded-lg shadow-md">
             <div className="flex items-center">
-              <img src={item.image} alt={item.name} className="h-20 w-20 object-cover rounded-lg mr-4" />
+              <img src={`${process.env.PUBLIC_URL}/${item.image}`} alt={item.name} className="h-20 w-20 object-cover rounded-lg mr-4" />
               <div>
                 <h2 className="text-lg font-semibold text-gray-800">{item.name}</h2>
                 <p className="text-gray-600">€ {item.price.toFixed(2)} x {item.quantity}</p>
