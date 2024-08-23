@@ -62,7 +62,7 @@ const CheckoutPage = () => {
   };
 
   return (
-    <>
+    <div>
           <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
         <div className="text-center">
           <h1 className="text-6xl font-extrabold mb-4">Checkout</h1>
@@ -132,7 +132,7 @@ const CheckoutPage = () => {
         </button>
       </form>
     </div>
-    </>
+    </div>
   );
 };
 

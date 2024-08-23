@@ -49,7 +49,16 @@ const ProductDetails = () => {
   if (!product) return <div>Loading...</div>;
 
   return (
+    <div>
+    <div className="hero-section flex items-center justify-center bg-customGrey-200 h-56" data-aos="fade-up">
+        <div className="text-center">
+          <h1 className="text-4xl font-extrabold mb-4">{product.name}</h1>
+          <p className="text-2xl mb-6">Category: {product.category}</p>
+        </div>
+      </div>
+      
     <div className="container mx-auto p-4">
+      
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
         <div>
           <img src={product.image} alt={product.name} className="w-full h-auto rounded-lg shadow-md" />
@@ -84,6 +93,7 @@ const ProductDetails = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

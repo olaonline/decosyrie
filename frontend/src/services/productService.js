@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/products';
+// const API_URL = 'https://localhost:5001/api/products';
+const API_URL = 'https://decosyrie.onrender.com/api/products';
 
 export const fetchProducts = async () => {
   try {

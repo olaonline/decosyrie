@@ -1,7 +1,8 @@
 import axios from 'axios';
 import { jwtDecode } from 'jwt-decode'; // Correct import
 
-const API_URL = 'http://localhost:5001/api/users';
+const API_URL = 'https://decosyrie.onrender.com/api/users';
+// const API_URL = 'https://localhost:5001/api/users';
 
 export const registerUser = async (user) => {
   try {

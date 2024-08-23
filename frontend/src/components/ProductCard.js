@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 const ProductCard = ({ product }) => {
   return (
     <div data-aos="flip-left" className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ease-in-out">
-      <img src={product.image} alt={product.name} className="h-56 w-full object-cover" />
+      <img src={`${process.env.PUBLIC_URL}/${product.image}`} alt={product.name} className="h-56 w-full object-cover" />
       <div className="p-4">
         <h2 className="text-lg font-semibold text-gray-800">{product.name}</h2>
         <p className="text-gray-600 mt-2">€ {product.price.toFixed(2)}</p>
