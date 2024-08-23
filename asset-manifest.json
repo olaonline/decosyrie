@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/decosyrie/static/css/main.d30289ca.css",
-    "main.js": "/decosyrie/static/js/main.a0c472fa.js",
+    "main.js": "/decosyrie/static/js/main.0c6c4474.js",
     "static/media/hero.jpg": "/decosyrie/static/media/hero.2cbc81fcb4aec56f9bb8.jpg",
     "static/media/slider2.jpg": "/decosyrie/static/media/slider2.2bcd0e2ba59e52b6049a.jpg",
     "static/media/about.png": "/decosyrie/static/media/about.6d1ce5e06c531538d299.png",
@@ -18,10 +18,10 @@
     "static/media/fa-v4compatibility.woff2": "/decosyrie/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/decosyrie/index.html",
     "main.d30289ca.css.map": "/decosyrie/static/css/main.d30289ca.css.map",
-    "main.a0c472fa.js.map": "/decosyrie/static/js/main.a0c472fa.js.map"
+    "main.0c6c4474.js.map": "/decosyrie/static/js/main.0c6c4474.js.map"
   },
   "entrypoints": [
     "static/css/main.d30289ca.css",
-    "static/js/main.a0c472fa.js"
+    "static/js/main.0c6c4474.js"
   ]
 }
