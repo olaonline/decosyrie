@@ -61,7 +61,7 @@ const ProductDetails = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
         <div>
-          <img src={product.image} alt={product.name} className="w-full h-auto rounded-lg shadow-md" />
+          <img src={`${process.env.PUBLIC_URL}/${product.image}`} alt={product.name} className="w-full h-auto rounded-lg shadow-md" />
         </div>
         <div className="flex flex-col">
           <h1 className="text-3xl font-bold text-gray-800 mb-4">{product.name}</h1>
